@@ -14,10 +14,10 @@ $(document).ready(function(){
 		//"color":"white",
 		"font-size": "80%",
 		"z-index":"100",
-		"top":"94%",
+		"top":"93.8%",
 		//"background-color":"white",
 		"border-radius":"8px",
-		"left":"89.45%"
+		"left":"89.2%"
 	});
 
 	$("div.header").append("<p id='banner'>Ritika Tamirisa</p>");
@@ -53,7 +53,7 @@ $(document).ready(function(){
 		"border-radius":"10px",
 		"margin-left": "50px",
 		"cursor":"pointer",
-		"font-family":"Open Sans, sans-serif",
+		"font-family":"'Century Gothic', sans-serif",
 	});
 
 	$("#tabs").css({
@@ -86,7 +86,7 @@ $(document).ready(function(){
 			"font-size":"500%",
 			"color": "black",
 			"text-shadow":"3px 3px 0 #888",
-			"font-family":"Open Sans, sans-serif",
+			"font-family":"'Century Gothic', sans-serif",
 			"font-weight":"600",
 			"margin":"0",
 			"padding":"0"
@@ -109,9 +109,10 @@ $(document).ready(function(){
 			"top": "10%",
 			"left": "55%",
 			"width":"40%",
-			"height": "80%",
+			"height": "78%",
 			"background-color": "rgba(999,999,999, 0.86)",
-			"border-radius":"10px"
+			"border-radius":"10px",
+			"overflow":"auto"
 		});
 
 			$("#text").append("<h1>Hi, I'm Tika!</h1>");
@@ -120,7 +121,7 @@ $(document).ready(function(){
 				"font-size":"400%",
 				"color": "rgb(85, 41, 115",
 				//"text-shadow":"3px 3px 0 #888",
-				//"font-family":"Open Sans, sans-serif",
+				//"font-family":"'Century Gothic', sans-serif",
 				"font-weight":"200",
 				"margin":"0",
 				"padding":"0",
@@ -139,11 +140,21 @@ $(document).ready(function(){
 				"margin-right":"10px",
 				"margin-top":"2px"
 			});
-	$("#email").append('<h2>Contact me:</h2><form action="MAILTO:ritika.tamirisa@hotmail.com" method="post" enctype="text/plain">Name:<br><input type="text" name="name" value="your name"><br>E-mail:<br><input type="text" name="mail" value="your email"><br>Message:<br><input type="text" name="message" value="your message" size="50"><br><input type="submit" value="Send"><input type="reset" value="Reset"></form>');
+	$("#email").append('<form class="email" action="mailer.php" method="post"><p>Name:</p><input type="text" name="name" /><p>E-mail:</p><input type="text" name="email" /><p>Subject:</p><input type="text" name="subject" /><p>Message:</p><textarea name="message"></textarea></p><input class="send" type="submit" value="Send"></form>');
 	$('#email').css({
 		"margin-left":"10px",
-		"font-family":"'Century Gothic', sans-serif"
+		"font-family":"'Century Gothic', sans-serif",
 	});
+
+	$("#email textarea").css({
+		"width":"30%",
+		"height":"24px"
+	});
+	$("#email p").css({
+		"margin-top":"0",
+		"margin-bottom":"0",
+		"padding":"0"
+	})
 			
 	$("div.container").append("<div class='resume'></div>")
 	$("div.resume").css({
@@ -152,7 +163,8 @@ $(document).ready(function(){
 		//"background-image": "url('images/about.jpg')",
 		"background-position": "center bottom",
 		"background-repeat":"no-repeat",
-		"background-size": "cover"
+		"background-size": "cover",
+		"padding-left":"20px"
 	});
 
 	var resume = "<h1>Education</h1><h2>B.S. Biochemistry (Medicinal Chemistry), Arizona State University</h2><p>Expected Graduation Date: May 2017</br>Barrett, The Honors College</br>GPA: 4.0</p><h2>Diploma, Rancho Solano Preparatory School</h2><p>Graduation Date: May 2013</p><h1>Experience</h1><h2>Research Assistant</h2><h3>Arizona State University Biodesign Institute</h3><h3>October 2014 - Present</h3><p>Assistant to Dr. John Chaput in his research on organic synthesis of unnatural genetic structures.</br>Familiarity with laboratory safety procedures and proper research conduct</p><h2>Assistant Medical Secretary</h2><h3>Arizona Neurology and Sleep Center</h3><h3>May 2014 - Present</h3><p>Learned to interact with customers in a medical office by assisting with customer relations and insurance billing. </br> Opportunities to observe the day-to-day operations of a private practice offering a number of neurology services</p><h2>Teaching Assistant</h2><h3>Rancho Solano Preparatory School</h3><h3>August 2012 - May 2013</h3><p>Assisted teacher with grading coursework and creating quizzes</p><h2>Hospital Volunteer</h2><h3>Arrowhead Hospital</h3><h3>May - August 2012, May-August 2013</h3><p>Helped nurses with cleaning, feeding, and patient care for 8 hours per week.</p>";
@@ -178,7 +190,7 @@ $(document).ready(function(){
 			"font-size":"500%",
 			"color": "black",
 			"text-shadow":"3px 3px 0 #888",
-			"font-family":"Open Sans, sans-serif",
+			"font-family":"'Century Gothic', sans-serif",
 			"font-weight":"600",
 			"margin":"0",
 			"padding":"0",
@@ -190,9 +202,10 @@ $(document).ready(function(){
 			//"top": "5%",
 			"left": "55%",
 			"width":"40%",
-			"height": "80%",
+			"height": "70%",
 			"background-color": "rgba(999,999,999, 0.86)",
 			"border-radius":"10px",
+			"overflow":"auto"
 			//"display":"inline"
 		});
 
@@ -204,7 +217,7 @@ $(document).ready(function(){
 			"font-size":"200%",
 			"color": "black",
 			//"text-shadow":"3px 3px 0 #888",
-			//"font-family":"Open Sans, sans-serif",
+			//"font-family":"'Century Gothic', sans-serif",
 			"font-weight":"200",
 			"margin":"0",
 			"padding":"0",
